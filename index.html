@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RicordAI — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #3C3489;
+    --purple-light: #EEEDFE;
+    --purple-mid: #7F77DD;
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --border: #e8e8e8;
+    --bg: #fafaf8;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+  .hero {
+    background: var(--purple);
+    color: white;
+    padding: 60px 48px 48px;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 { font-family: 'DM Serif Display', serif; font-size: 42px; line-height: 1.1; margin-bottom: 8px; }
+  .hero p { font-size: 15px; opacity: 0.7; }
+
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+  .lang-btn.active { background: white; color: var(--purple); border-color: white; }
+
+  .container { max-width: 800px; margin: 0 auto; padding: 48px 32px; }
+
+  .section { margin-bottom: 40px; }
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--purple);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--purple-light);
+  }
+  .section p { font-size: 15px; color: var(--text-muted); margin-bottom: 10px; }
+  .section ul { margin-left: 20px; margin-bottom: 10px; }
+  .section ul li { font-size: 15px; color: var(--text-muted); margin-bottom: 6px; }
+
+  .highlight {
+    background: var(--purple-light);
+    border-left: 4px solid var(--purple);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .highlight p { color: var(--purple); font-weight: 500; margin: 0; }
+
+  .badge {
+    display: inline-block;
+    background: var(--purple);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+
+  .content-it, .content-en { display: none; }
+  .content-it.active, .content-en.active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">Informativa sulla Privacy</div>
+  <h1>RicordAI</h1>
+  <p>Ultimo aggiornamento: Maggio 2026</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ITALIANO -->
+  <div class="content-it active">
+
+    <div class="section">
+      <div class="highlight">
+        <p>🔒 RicordAI non raccoglie, non archivia e non trasmette i tuoi dati personali a server propri. Tutti i dati rimangono sul tuo dispositivo.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>1. Titolare del trattamento</h2>
+      <p>Il titolare del trattamento dei dati è il team di sviluppo di RicordAI, contattabile all'indirizzo email: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>2. Dati raccolti e come vengono utilizzati</h2>
+      <p>RicordAI raccoglie e tratta le seguenti categorie di dati, tutti salvati esclusivamente sul tuo dispositivo:</p>
+      <ul>
+        <li><strong>Nome utente</strong> — inserito volontariamente durante l'onboarding, usato per personalizzare l'esperienza</li>
+        <li><strong>Scadenze ed eventi</strong> — creati dall'utente, salvati localmente tramite AsyncStorage</li>
+        <li><strong>Foto di documenti</strong> — scattate o caricate dall'utente per la funzione Carte & Documenti, salvate esclusivamente sul dispositivo (solo per utenti Premium)</li>
+        <li><strong>Preferenze</strong> — lingua, tema, sfondo, gruppi attivi</li>
+        <li><strong>Storico chat AI</strong> — le conversazioni con l'assistente AI, salvate localmente</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Dati che NON raccogliamo</h2>
+      <p>RicordAI non raccoglie:</p>
+      <ul>
+        <li>Indirizzi IP o identificatori di rete</li>
+        <li>Dati di geolocalizzazione</li>
+        <li>Dati di navigazione o profilazione</li>
+        <li>Informazioni finanziarie o di pagamento</li>
+        <li>Contatti della rubrica</li>
+        <li>Qualsiasi dato su server propri</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Servizi di terze parti</h2>
+      <p>RicordAI si avvale di servizi di terze parti per alcune funzionalità:</p>
+
+      <div class="badge">ANTHROPIC API</div>
+      <p>Per generare risposte dell'assistente AI, il testo delle domande viene inviato alle API di Anthropic (Claude). Anthropic non utilizza i dati delle API per addestrare i propri modelli. I log tecnici vengono conservati temporaneamente per scopi di sicurezza. Per maggiori informazioni: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p>
+
+      <div class="badge" style="margin-top:12px">COMPARATORI ASSICURATIVI</div>
+      <p>Quando l'utente clicca su un link di comparazione (Segugio.it, Facile.it, MutuiOnline ecc.), viene reindirizzato al sito esterno. Da quel momento si applicano le privacy policy dei rispettivi siti. RicordAI potrebbe ricevere una commissione di affiliazione per i contratti stipulati.</p>
+
+      <div class="badge" style="margin-top:12px">APPLE (APNs)</div>
+      <p>Le notifiche push vengono inviate tramite Apple Push Notification Service (APNs). Apple gestisce la consegna delle notifiche secondo la propria privacy policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Sicurezza dei dati</h2>
+      <p>I dati dell'utente sono protetti da:</p>
+      <ul>
+        <li><strong>Sandbox iOS</strong> — i dati sono inaccessibili ad altre app</li>
+        <li><strong>Autenticazione biometrica</strong> — Face ID / Touch ID all'apertura dell'app</li>
+        <li><strong>Archiviazione locale</strong> — nessun dato transita su server propri di RicordAI</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Diritti dell'utente (GDPR)</h2>
+      <p>In conformità al Regolamento Europeo 2016/679 (GDPR), l'utente ha diritto a:</p>
+      <ul>
+        <li><strong>Accesso</strong> — visualizzare i propri dati (tutti visibili direttamente nell'app)</li>
+        <li><strong>Rettifica</strong> — modificare i propri dati in qualsiasi momento dall'app</li>
+        <li><strong>Cancellazione</strong> — eliminare tutti i dati tramite Impostazioni → Elimina tutti i dati</li>
+        <li><strong>Portabilità</strong> — i dati sono salvati localmente e accessibili tramite backup del dispositivo</li>
+      </ul>
+      <p>Per qualsiasi richiesta relativa ai dati personali: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>7. Conservazione dei dati</h2>
+      <p>I dati vengono conservati sul dispositivo dell'utente fino a quando l'utente non li elimina manualmente o disinstalla l'app. RicordAI non ha accesso ai dati dell'utente in nessun momento.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Minori</h2>
+      <p>RicordAI non è destinata a utenti di età inferiore a 13 anni. Non raccogliamo consapevolmente dati di minori.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Modifiche alla Privacy Policy</h2>
+      <p>Eventuali modifiche alla presente Privacy Policy saranno pubblicate su questa pagina con data di aggiornamento. L'uso continuato dell'app dopo le modifiche costituisce accettazione della nuova policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Contatti</h2>
+      <p>Per qualsiasi domanda relativa alla privacy: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="content-en">
+
+    <div class="section">
+      <div class="highlight">
+        <p>🔒 RicordAI does not collect, store or transmit your personal data to any servers. All data remains on your device.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>1. Data Controller</h2>
+      <p>The data controller is the RicordAI development team, reachable at: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>2. Data Collected and How It Is Used</h2>
+      <p>RicordAI collects and processes the following categories of data, all stored exclusively on your device:</p>
+      <ul>
+        <li><strong>Username</strong> — voluntarily entered during onboarding, used to personalize the experience</li>
+        <li><strong>Deadlines and events</strong> — created by the user, stored locally via AsyncStorage</li>
+        <li><strong>Document photos</strong> — taken or uploaded by the user for the Cards & Documents feature, stored exclusively on the device (Premium users only)</li>
+        <li><strong>Preferences</strong> — language, theme, background, active groups</li>
+        <li><strong>AI chat history</strong> — conversations with the AI assistant, stored locally</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Data We Do NOT Collect</h2>
+      <p>RicordAI does not collect:</p>
+      <ul>
+        <li>IP addresses or network identifiers</li>
+        <li>Geolocation data</li>
+        <li>Browsing or profiling data</li>
+        <li>Financial or payment information</li>
+        <li>Address book contacts</li>
+        <li>Any data on our own servers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Third-Party Services</h2>
+      <p>RicordAI uses third-party services for certain features:</p>
+
+      <div class="badge">ANTHROPIC API</div>
+      <p>To generate AI assistant responses, question text is sent to Anthropic's APIs (Claude). Anthropic does not use API data to train its models. Technical logs are temporarily retained for security purposes. For more information: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p>
+
+      <div class="badge" style="margin-top:12px">INSURANCE COMPARATORS</div>
+      <p>When a user clicks a comparison link (Segugio.it, Facile.it, MutuiOnline etc.), they are redirected to the external site. The respective site's privacy policies apply from that point. RicordAI may receive an affiliate commission for contracts signed.</p>
+
+      <div class="badge" style="margin-top:12px">APPLE (APNs)</div>
+      <p>Push notifications are sent via Apple Push Notification Service (APNs). Apple handles notification delivery according to its own privacy policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Data Security</h2>
+      <p>User data is protected by:</p>
+      <ul>
+        <li><strong>iOS Sandbox</strong> — data is inaccessible to other apps</li>
+        <li><strong>Biometric authentication</strong> — Face ID / Touch ID when opening the app</li>
+        <li><strong>Local storage</strong> — no data passes through RicordAI's own servers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. User Rights (GDPR)</h2>
+      <p>In compliance with European Regulation 2016/679 (GDPR), users have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> — view their data (all visible directly in the app)</li>
+        <li><strong>Rectification</strong> — modify their data at any time from the app</li>
+        <li><strong>Erasure</strong> — delete all data via Settings → Delete all data</li>
+        <li><strong>Portability</strong> — data is stored locally and accessible via device backup</li>
+      </ul>
+      <p>For any data-related requests: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>7. Data Retention</h2>
+      <p>Data is retained on the user's device until the user manually deletes it or uninstalls the app. RicordAI has no access to user data at any time.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Children</h2>
+      <p>RicordAI is not intended for users under the age of 13. We do not knowingly collect data from minors.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>Any changes to this Privacy Policy will be published on this page with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Contact</h2>
+      <p>For any privacy-related questions: <strong>privacy@ricordai.app</strong></p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  RicordAI — Privacy Policy — Maggio 2026 — Tutti i diritti riservati
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.content-it, .content-en').forEach(c => c.classList.remove('active'));
+  document.querySelector('.content-' + lang).classList.add('active');
+  event.target.classList.add('active');
+  document.querySelector('.hero-tag').textContent = lang === 'it' ? 'Informativa sulla Privacy' : 'Privacy Policy';
+}
+</script>
+
+</body>
+</html>
